@@ -1,0 +1,68 @@
+
+
+
+<span class="c0" style="font-size: 16px; line-height: 18px;">Copyright 2016 Lacey's Hair &amp; Beauty. All rights reserved.</span>
+
+
+
+
+
+
+
+
+.second-address{
+	float: left;
+	left: 345px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="footer_fzldscktoGY7iuO8bRH86 body second-address">
+			   
+	          
+	  <p class="p0">
+	              
+<span class="c0">Lacey's Tanning &amp; Beauty</span>
+	          </p>
+	      <p class="p1">
+	              
+<span class="c0">94 Front Street</span>
+	          </p>
+	      <p class="p2">
+	              
+<span class="c0">Whickham</span>
+	          </p>
+	          
+	      <p class="p2">
+	              
+<span class="c0">Gateshead</span>
+	          </p>
+	          
+	      <p class="p3">
+	              
+<span class="c0">NE16 4JJ</span>
+	          </p>
+	      <p class="p5">
+	              
+<span class="c0">&nbsp;</span>
+	          </p>
+	      <p class="p6">
+	              
+<span class="c0"> 0191 488 9082</span>
+	          </p>
+
+		
+	</div>      
+	      

@@ -11,16 +11,31 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
 
-    Route::get('/', function () {
-        return view('welcome');
-    });
-
-});
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
+    Route::get('/', function () {
+        return view('pages.home');
+    });
+	
+	Route::resource('flyers', 'FlyersController');
+	Route::post('flyers/{zip}/{street}/photos', 'FlyersController@addPhoto');
+	
+	
+	
+	Route::get('flyers/{zip}/{street}', 'FlyersController@show');
+
     Route::get('/home', 'HomeController@index');
+    Route::get('login/', function(){
+    	return view('auth.login');	
+    });
+    Route::get('register/', function(){
+    	return view('auth.register');	
+    });
+    Route::get('password/reset/', function(){
+    	return view('auth.passwords.email');	
+    });
+	
 });

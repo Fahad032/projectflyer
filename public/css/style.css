@@ -1,0 +1,22 @@
+body{
+	padding-top: 70px;
+}
+
+body.stop-scrolling{
+	overflow: visible !important;
+}
+
+
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.flyer-photo li{
+	margin-bottom: 30px;
+}
+
+#addPhoto{
+	margin-bottom: 30px;
+}
