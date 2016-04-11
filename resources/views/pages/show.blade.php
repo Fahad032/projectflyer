@@ -30,6 +30,7 @@
 				
 			
 			@if(\Auth::check())
+				@if(auth()->id() == $flyer->user_id)
 			
 			<hr />
 			
@@ -38,6 +39,10 @@
 						
 						{{ csrf_field() }}
 				</form>			
+				
+				
+				@endif
+				
 				
 			@endif	
 				

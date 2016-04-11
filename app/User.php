@@ -30,4 +30,16 @@ class User extends Authenticatable
 		return $this->hasMany(Flyer::class);
 	}
 	
+	/**
+	 * check if the use owns the flyer
+	 *
+	 * @return bool
+	 * @author  
+	 */
+	
+	public function owns($relation){
+		
+		return $relation->user_id == $this->id;
+	}
+	
 }
