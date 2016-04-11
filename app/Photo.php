@@ -22,5 +22,18 @@ class Photo extends Model
 		
 		return $this->belongsTo(Flyer::class);
 	
-	}			
+	}	
+	
+	
+	public function delete(){
+		
+		\File::delete([
+						$this->thumbnail_path,
+						$this->photo_path
+					]);
+		
+		return parent::delete();
+		
+		
+	}		
 }

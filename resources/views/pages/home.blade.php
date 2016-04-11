@@ -11,7 +11,11 @@
 					repellat.
 				</p>
 				
+				@if(\Auth::check())
 				<a href="flyers/create" class="btn btn-primary">Create Flyer</a>
+				@else
+				<a href="/register" class="btn btn-primary">Sign Up</a>				
+				@endif
 		</div>
 	</div> 
 @stop

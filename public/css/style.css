@@ -20,3 +20,16 @@ ul.flyer-photo li{
 #addPhoto{
 	margin-bottom: 30px;
 }
+
+
+.flyer-photo input[type='submit']{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #777;
+    float: right;
+    font-size: 30px;
+    margin-bottom: -50px;
+    margin-right: -8px;
+    position: relative;
+    top: -8px;
+    z-index: 99;}
+

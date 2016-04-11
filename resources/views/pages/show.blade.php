@@ -16,6 +16,16 @@
 	
 					@foreach($photoSet as $photo)
 					<li class="col-md-3">
+							@if(auth()->id() == $flyer->user_id)
+					
+						<form action="../../photo/{{ $photo->id }}" method="post" accept-charset="utf-8">
+						  {{ method_field('DELETE') }}
+						  {{ csrf_field() }}
+						  
+							<input class="btn" type="submit" value="&times;"/></p>
+						</form>
+							@endif
+						
 						<img src="{{ asset($photo->thumbnail_path) }}" class="img-responsive" />
 						
 					</li>

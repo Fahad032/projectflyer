@@ -22,7 +22,7 @@ Route::group(['middleware' => 'web'], function () {
 	
 	Route::resource('flyers', 'FlyersController');
 	Route::post('flyers/{zip}/{street}/photos', 'FlyersController@addPhoto');
-	
+	Route::delete('photo/{id}', 'FlyersController@photoDestroy');	
 	
 	
 	Route::get('flyers/{zip}/{street}', 'FlyersController@show');
